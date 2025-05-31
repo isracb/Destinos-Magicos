@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos Mágicos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fdfdfd;
+      color: #1c203e;
+    }
+    header {
+      background: linear-gradient(to right, #1c203e, #4ca1af);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .destinos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .destino {
+      width: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .destino img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .destino p {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    form button {
+      background-color: #1c203e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eaf6f6;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Destinos Mágicos</h1>
+    <p>Tu próxima aventura empieza aquí</p>
+  </header>
+
+  <section>
+    <h2>Sobre nosotros</h2>
+    <p>Somos una agencia de viajes apasionada por crear experiencias inolvidables. Conectamos personas con los destinos más mágicos del mundo.</p>
+  </section>
+
+  <section>
+    <h2>Destinos populares</h2>
+    <div class="destinos">
+      <div class="destino">
+        <img src="https://source.unsplash.com/featured/?beach" alt="Playa">
+        <p>Playas paradisíacas</p>
+      </div>
+      <div class="destino">
+        <img src="https://source.unsplash.com/featured/?mountains" alt="Montaña">
+        <p>Montañas mágicas</p>
+      </div>
+      <div class="destino">
+        <img src="https://source.unsplash.com/featured/?city,travel" alt="Ciudad">
+        <p>Ciudades vibrantes</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Solicita información</h2>
+    <form action="https://formsubmit.co/destinosmagicos24@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo electrónico" required>
+      <textarea name="mensaje" placeholder="Cuéntanos qué destino te interesa" required></textarea>
+      <input type="text" name="_honey" style="display:none">
+      <input type="hidden" name="_next" value="https://thankyou-page.com">
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Destinos Mágicos | Síguenos en redes sociales</p>
+  </footer>
+</body>
+</html>
